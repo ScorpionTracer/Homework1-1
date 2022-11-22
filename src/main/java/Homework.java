@@ -1,17 +1,17 @@
 
 public class Homework {
     public static void main(String[] args) {
-        task2();
-        System.out.println("a * (b + (c / d)= " + task3(1, 150, 300, 2));
-        task4(10, 10);
-        task5(0);
-        task6(-10);
-        task7("Андрей");
-        task8(200);
+        taskVar();
+        System.out.println("a * (b + (c / d))= " + taskExp(1, 150, 300, 2));
+        taskExam(10, 10);
+        taskPosOrNeg(0);
+        taskBool(-10);
+        taskStr("Андрей");
+        taskYears(200);
 
     }
 
-    private static void task8(int a) {
+    private static void taskYears(int a) {
         if (a % 400 == 0) {
             System.out.println("Год високосный");
         } else if (a % 100 == 0) {
@@ -23,31 +23,31 @@ public class Homework {
         }
     }
 
-    private static void task7(String str) {
+    private static void taskStr(String str) {
         System.out.println("Привет, " + str);
     }
 
-    private static boolean task6(int a) {
+    private static boolean taskBool(int a) {
         return a < 0;
     }
 
-    private static void task5(int a) {
+    private static void taskPosOrNeg(int a) {
         if (a >= 0) System.out.println("a is positive");
         else System.out.println("a is negative");
     }
 
-    private static boolean task4(double a, double b) {
+    private static boolean taskExam(double a, double b) {
         if (a + b >= 10 || a + b <= 20)
             return true;
         else
             return false;
     }
 
-    public static double task3(double a, double b, double c, double d) {
+    public static double taskExp(double a, double b, double c, double d) {
         return a * (b + (c / d));
     }
 
-    private static void task2() {
+    private static void taskVar() {
         char a = 'a';
         byte b = 10;
         short c = 25;
